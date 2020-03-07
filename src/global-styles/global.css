@@ -1,0 +1,62 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+div,
+nav,
+img,
+body,
+figure,
+section,
+article,
+span {
+  padding: 0;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  font-size: 16px;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    min-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    min-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    min-width: 425px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    min-width: 320px;
+  }
+}

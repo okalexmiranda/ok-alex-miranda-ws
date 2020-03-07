@@ -1,0 +1,89 @@
+#footerT001Component {
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  color: #abb2be;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.listTitle {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0;
+  color: white;
+}
+
+.listItem {
+  margin: 8px 0;
+  width: 100%;
+}
+
+.linkPath {
+  .linkTitle {
+    color: #abb2be;
+    transition: 0.3s;
+    margin-right: 10px;
+
+  }
+
+  .linkTitle:hover {
+    color: white;
+    transition: 0.3s;
+  }
+}
+
+.signOff {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.brandLogo {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 20px 0;
+  color: white;
+}
+.brandName {
+  font-weight: 800;
+  color: white;
+  margin: 5px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+
+.container {
+  padding: 20px 0 40px;
+}
+
+  .signOff {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .navigation {
+    width: 100%;
+  }
+  .list {
+    margin: 20px 0;
+    width: 50%;
+  }
+}

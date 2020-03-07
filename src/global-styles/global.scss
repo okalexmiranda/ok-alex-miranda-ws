@@ -1,3 +1,8 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 h1,
 h2,
 h3,
@@ -13,7 +18,7 @@ body,
 figure,
 section,
 article,
-span {
+span, ul, li {
   padding: 0;
   margin: 0;
   margin-block-start: 0;
@@ -22,20 +27,44 @@ span {
 
 a {
   text-decoration: none;
+  
 }
+
+a:hover {
+  text-decoration: none;
+}
+
 
 img {
   vertical-align: middle;
 }
 
 body {
+  font-family: Helvetica, Arial;
   font-size: 16px;
+  line-height: 1.2;
 }
 
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ul {
+  list-style-type: none;
 }
+
+.darkThemeT002{
+  background-color: #1b1f24;
+  a {
+    color: white;
+  }
+  a:hover {
+    color: #888888;
+  }
+}
+
+.marginX80{
+  margin: 0 auto;
+  width: 80%;
+}
+
+
 
 @media screen and (max-width: 1440px) {
   body {
@@ -52,6 +81,10 @@ body {
 @media screen and (max-width: 768px) {
   body {
     min-width: 425px;
+  }
+  .marginX80{
+    margin: 0 auto;
+    width: 90%;
   }
 }
 

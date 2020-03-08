@@ -1,7 +1,25 @@
-#footerT001Component {
+#footer-t-001 {
+}
+
+.footerT001Component {
+  background-image: url("https://pa1.narvii.com/6938/393f276a6ddfefa0535699050d0162cb2f2a638dr1-300-300_00.gif");
+  background-repeat: repeat;
+}
+
+.bgColor {
+  display: flex;
+  align-items: center;
+  background-color: #1b1f24;
+  opacity: 0.98;
+  width: 100%;
 }
 
 .container {
+  min-height: 400px;
+  width: 100%;
+}
+
+.cont {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -19,34 +37,59 @@
 .list {
   display: flex;
   flex-direction: column;
-  width: 33%;
 }
 
 .listTitle {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 20px 0;
+  margin-bottom: 20px;
   color: white;
 }
 
 .listItem {
-  margin: 8px 0;
+  display: flex;
+  margin: 4px 0;
   width: 100%;
 }
 
 .linkPath {
-  .linkTitle {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  transition: 0.3s;
+  margin-right: 10px;
+  .linkText{
+    font-weight: 300;
     color: #abb2be;
-    transition: 0.3s;
+  }
+  .imageHolder{
+    width: 18px;
+    height: 18px;
     margin-right: 10px;
-
+    opacity: .6;
   }
-
-  .linkTitle:hover {
-    color: white;
-    transition: 0.3s;
+  .imageSource{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
+ 
+}
+
+.linkPath:hover .linkText {
+  color: #00f333;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+.linkPath:hover .imageHolder {
+  opacity: 1;
+}
+
+.linkPath:hover svg {
+  opacity: 1;
+  fill: black;
 }
 
 .signOff {
@@ -58,8 +101,8 @@
 .brandLogo {
   font-weight: 800;
   text-transform: uppercase;
-  margin: 20px 0;
-  color: white;
+  margin-bottom: 40px;
+  color: #00f333;
 }
 .brandName {
   font-weight: 800;
@@ -68,14 +111,21 @@
 }
 
 
+
+
 @media screen and (max-width: 768px) {
+  .footerT001Component {
+    display: flex;
+    align-items: center;
+    background-color: #1b1f24;
+    min-height: 400px;
+  }
 
-.container {
-  padding: 20px 0 40px;
-}
-
+  .container {
+    padding: 40px 0;
+  }
   .signOff {
-    margin: 20px 0;
+    margin: 40px 0;
     width: 100%;
   }
 
@@ -83,7 +133,11 @@
     width: 100%;
   }
   .list {
-    margin: 20px 0;
-    width: 50%;
+    margin: 40px 0;
+    width: 100%;
+  }
+
+  .brandLogo {
+    margin: 40px 0;
   }
 }

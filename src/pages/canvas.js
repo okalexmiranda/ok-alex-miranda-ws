@@ -6,6 +6,8 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import FooterT001 from "../components/footer-t-001"
 import HeroPanelT001 from "../components/hero-panel-t-001"
+import HeaderT001 from "../components/header-t-001"
+
 
 import "../global-styles/global.scss"
 
@@ -18,6 +20,7 @@ import {
 const Canvas = () => (
   <section>
     <SEO title="Footer" />
+    <HeaderT001/>
     <HeroPanelT001/>
     <FooterT001
         navigationItems={{

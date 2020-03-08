@@ -27,6 +27,12 @@ span, ul, li {
 
 a {
   text-decoration: none;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   
 }
 
@@ -50,7 +56,6 @@ ul {
 }
 
 .darkThemeT002{
-  background-color: #1b1f24;
   a {
     color: white;
   }
@@ -59,9 +64,22 @@ ul {
   }
 }
 
-.marginX80{
+.d-width-x-80{
   margin: 0 auto;
   width: 80%;
+}
+.d-width-x-100{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.y-center{
+  display: flex;
+  align-items: center;
+}
+
+.d-row{
+  display: flex;
 }
 
 
@@ -82,14 +100,24 @@ ul {
   body {
     min-width: 425px;
   }
-  .marginX80{
+  .m-width-x-80{
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
   }
+  .m-width-x-100{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .m-column{
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
 
 @media screen and (max-width: 425px) {
   body {
-    min-width: 320px;
+    min-width: 370px;
   }
 }

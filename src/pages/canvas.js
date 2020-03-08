@@ -16,12 +16,14 @@ import {
   navigationServices,
   navigationSocial,
 } from "../data-simulation/simulation"
+import ListOfListsT001 from "../components/listOfLists-t-001"
 
 const Canvas = () => (
   <section>
     <SEO title="Footer" />
     <HeaderT001/>
     <HeroPanelT001/>
+    <ListOfListsT001/>
     <FooterT001
         navigationItems={{
           navigationSkills,

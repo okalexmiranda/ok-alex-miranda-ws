@@ -10,10 +10,10 @@ const HeroPanelT001 = () => {
           <div className={heroPanelT001Styles.greetingContainer}>
             <div className={heroPanelT001Styles.card}>
               <span className={heroPanelT001Styles.subtitleTop}>
-                @okAlexMiranda
+              Software Development_
               </span>
               <h1 className={heroPanelT001Styles.title}>
-                Software Development_
+                BUILD IT WITH CODE
               </h1>
 
               <p className={heroPanelT001Styles.paragraph}>

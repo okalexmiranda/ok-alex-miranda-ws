@@ -27,6 +27,16 @@ span, ul, li {
   margin-block-end: 0;
 }
 
+li *:last-child {
+  margin-bottom: inherit;
+}
+
+li > ul {
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 a {
   text-decoration: none;
   -webkit-touch-callout: none;
@@ -48,18 +58,18 @@ img {
 }
 
 body {
-  font-family: 'Roboto Mono', 'Helvetica';
+  font-family: 'Helvetica';
   font-size: 16px;
   line-height: 1.2;
 }
 
 h1{
-  font-family: 'Saira', 'Helvetica';
+  font-family: 'Helvetica';
   font-weight: 900;
 }
 
 h2, h3, h4, h5, h6{
-  font-family: 'Saira', 'Helvetica';
+  font-family: 'Helvetica';
   font-weight: 500;
 }
 
@@ -67,6 +77,7 @@ h2, h3, h4, h5, h6{
 ul {
   list-style-type: none;
 }
+
 
 .darkThemeT002{
   a {

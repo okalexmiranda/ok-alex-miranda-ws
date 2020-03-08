@@ -48,8 +48,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
+  text-align: center;
+  
 }
 
 .greetingContainer {
@@ -70,7 +73,7 @@
     text-transform: uppercase;
   }
   .paragraph {
-    color: rgb(171, 197, 222);
+    color: #ffffff;
     margin: 3px 0;
     font-size: 18px;
   }
@@ -80,7 +83,6 @@
     transition: 0.4s;
     border-radius: 25px;
     margin: 30px 0;
-    transition: 0.4s;
     border: 2px solid $themeColor;
     color: #ffffff;
   }
@@ -99,17 +101,25 @@
     height: 100%;
 
     .subtitleTop {
-      font-size: 20px;
+      font-size: 18px;
     }
     .title {
-      font-size: 48px;
+      font-size: 80px;
       margin: 30px 0;
+      width: 90%;
     }
     .paragraph {
       margin: 8px 0 14px;
-      width: 60%;
+      width: 90%;
       line-height: 1.4;
     }
+    .linkPath {
+      transition: 0.4s;
+      color: white;
+      background-color: $themeColor;
+      border: 2px solid $themeColor;
+    }
+    
   }
 
   .card {

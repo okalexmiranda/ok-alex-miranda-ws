@@ -1,0 +1,51 @@
+@import "../../global-styles/variables.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+}
+
+.listOfLists {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 80%;
+  .title {
+    margin: 20px 0;
+    margin-bottom: 60px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #f36
+
+  }
+  .listItem {
+    display: flex;
+    margin: 20px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .listItem:last-child {
+    border-bottom: initial;
+    margin-bottom: 0;
+  }
+  .subtitle {
+    font-weight: 600;
+    width: 60%;
+  }
+  .list {
+    width: 40%;
+  }
+  .item {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .listOfLists {
+    
+    width: 80%;
+   
+  }
+}

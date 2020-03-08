@@ -33,7 +33,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Saira`,
+            family: `Montserrat`,
             subsets: [`latin`],
             variants: [`200`,`300`,`400`, `500`,`600`, `700`, `900`]
           },

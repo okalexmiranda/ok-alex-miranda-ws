@@ -1,3 +1,5 @@
+@import "../../global-styles/variables.scss";
+
 .jumbotron {
   display: flex;
   background-color: black;
@@ -58,19 +60,17 @@
   margin: 0 auto;
   .subtitleTop {
     font-size: 16px;
-    font-weight: lighter;
     letter-spacing: 0.5px;
-    color: #00f333;
+    color: $themeColor;
   }
   .title {
     font-size: 130px;
-    font-weight: 700;
     margin: 30px 0;
     line-height: 0.9;
+    text-transform: uppercase;
   }
   .paragraph {
     color: rgb(171, 197, 222);
-    font-weight: lighter;
     margin: 3px 0;
     font-size: 18px;
   }
@@ -81,15 +81,15 @@
     border-radius: 25px;
     margin: 30px 0;
     transition: 0.4s;
-    border: 2px solid #00f333;
+    border: 2px solid $themeColor;
     color: #ffffff;
   }
   .linkPath:hover {
     transition: 0.4s;
-    color: green;
+    color: black;
     transition: 0.4s;
-    background-image: linear-gradient(to right, #bffc22, #00f333);
-    border: 2px solid #00f333;
+    background-color: $themeColor;
+    border: 2px solid $themeColor;
   }
 }
 

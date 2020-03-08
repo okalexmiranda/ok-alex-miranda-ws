@@ -1,24 +1,25 @@
 @import "../../global-styles/variables.scss";
 
-#footer-t-001 {
+#header-t-001 {
+  
 }
 
-.footerT001Component {
-  background-image: url("https://pa1.narvii.com/6938/393f276a6ddfefa0535699050d0162cb2f2a638dr1-300-300_00.gif");
-  background-repeat: repeat;
+.headerT001Component {
 }
 
 .bgColor {
   display: flex;
   align-items: center;
-  background-color: rgba(27, 31, 36,.97);
   width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 
 .container {
-  min-height: 400px;
+  min-height: 80px;
   width: 100%;
-
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
 .cont {
@@ -32,13 +33,14 @@
 .navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 60%;
+  width: 50%;
 }
 
 .list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .listTitle {
@@ -51,7 +53,6 @@
 .listItem {
   display: flex;
   margin: 4px 0;
-  width: 100%;
 }
 
 .linkPath {
@@ -87,20 +88,15 @@
   opacity: 1;
 }
 
-.linkPath:hover svg {
-  opacity: 1;
-  fill: black;
-}
 
 .signOff {
   display: flex;
-  flex-direction: column;
-  width: 20%;
+  flex-direction: row;
+  width: 50%;
 }
 
 .brandLogo {
   text-transform: uppercase;
-  margin-bottom: 40px;
   color: $themeColor;
   font-weight: 700;
 }
@@ -110,31 +106,28 @@
 }
 
 
+
+
 @media screen and (max-width: 768px) {
-  .footerT001Component {
-    display: flex;
-    align-items: center;
-    background-color: #1b1f24;
-    min-height: 400px;
-  }
+ 
 
   .container {
-    padding: 40px 0;
+    padding: 10px 0;
   }
   .signOff {
-    margin: 40px 0;
-    width: 100%;
+    margin:  0;
+    width: 20%;
   }
 
   .navigation {
-    width: 100%;
+    width: 80%;
   }
   .list {
-    margin: 40px 0;
+    margin: 10px 0;
     width: 100%;
   }
 
   .brandLogo {
-    margin: 40px 0;
+    margin: 20px 0;
   }
 }

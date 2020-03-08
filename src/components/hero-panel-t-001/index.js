@@ -13,7 +13,7 @@ const HeroPanelT001 = () => {
                 @okAlexMiranda
               </span>
               <h1 className={heroPanelT001Styles.title}>
-                Software Development
+                Software Development_
               </h1>
 
               <p className={heroPanelT001Styles.paragraph}>
